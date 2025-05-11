@@ -206,6 +206,17 @@
     </div>
   </div>
 
+     <!--Restoration -->
+  <div class="section text-center">
+    <div class="container">
+      <h2 class="mb-4">Premium Jewelry Restoration Service</h2>
+      <p class="mb-4"> Our expert restoration service renews your custom Brakar by Silva piece with precision, care, and craftsmanship—so your legacy shines on. </p>
+      <button class="btn btn-gold mt-3" data-bs-toggle="modal" data-bs-target="#restorationModal">
+  Request Restoration
+</button>
+    </div>
+  </div>
+   
   <!-- Collaborations reference https://getbootstrap.com/docs/4.0/components/carousel/-->
   <div class="section bg-dark-alt text-center" id="explore">
     <div class="container">
@@ -325,7 +336,36 @@
       </div>
     </div>
   </footer>
+<!-- Modal -->
+<div class="modal fade" id="restorationModal" tabindex="-1" aria-labelledby="restorationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-start">
+      <div class="modal-header">
+        <h5 class="modal-title" id="restorationModalLabel">Restoration Inquiry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="details" class="form-label">Order Number </label>
+            <textarea class="form-control" id="details" rows="4" placeholder="Describe what needs to be restored..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
+   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
