@@ -122,24 +122,42 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-2 fixed-top">
-  <div class="container justify-content-between">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-3 fixed-top">
+  <div class="container">
 
-    <!-- Collapsible menu -->
+    <!-- Mobile Toggler Button  reference https://www.geeksforgeeks.org/bootstrap-5-navbar-responsive-behaviors-toggler/-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu https://getbootstrap.com/docs/4.0/components/collapse/-->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav text-center">
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaHomePage.html">Brakar by Silva</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Jewelry</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaCustomPage.html">Custom Service</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Collaborations</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaTermsPage.html">Terms & Conditions</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">News and Media</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Merch</a></li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="BrakarbySilvaHomePage.html">Brakar by Silva</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Jewelry</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="BrakarbySilvaCustomPage.html">Custom Service</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Collaborations</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="BrakarbySilvaTermsPage.html">Terms & Conditions</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">News and Media</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Merch</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
-
 <!-- Hero Section -->
 <div class="hero-section">
   <div>
