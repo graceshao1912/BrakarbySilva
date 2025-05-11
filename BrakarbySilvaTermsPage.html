@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+  body {
       background-color: #0d0d0d;
       color: #f2f2f2;
       font-family: 'Montserrat', sans-serif;
@@ -20,13 +20,15 @@
       letter-spacing: 1px;
     }
 
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.85) !important;
+     .navbar {
+      background-color: transparent !important;
     }
 
     .nav-link {
       color: white !important;
       font-weight: 300;
+      
+      
     }
 
     .nav-link:hover {
@@ -48,67 +50,61 @@
     }
 
     .hero-section {
-      position: relative;
-      height: 50vh;
-      background: url('images/background.png') center center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      z-index: 1;
-      color: white;
-      overflow: hidden;
-    }
+    position: relative;
+    height: 50vh;
+    background: url('images/background.png') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    overflow: hidden;
+}
 
     .hero-section::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      z-index: -1;
-    }
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* adjust transparency here */
+    z-index: -1;
+}
 
+    }
     .accordion-button {
       background-color: white;
       color: black;
     }
-
     .accordion-button:not(.collapsed) {
       color: white;
       background-color: black;
     }
-
     .accordion-body {
       background-color: white;
       color: black;
     }
-
     .terms-header {
       background-color: #000;
       padding: 2rem 0 1rem;
       text-align: center;
     }
-
     .terms-header h2 {
       margin: 0;
       color: #ffc107;
       font-weight: 700;
     }
-
     footer {
       background-color: #000;
       color: white;
       padding: 60px 0;
       text-align: center;
     }
-
     .footer-links a {
       color: gold;
       text-decoration: none;
       margin-right: 15px;
     }
-
     .form-control {
       background-color: #222;
       border: none;
@@ -116,515 +112,557 @@
     }
   </style>
 </head>
-<body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark py-3 px-3 position-absolute w-100">
-  <div class="container justify-content-center">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light py-3 px-3 position-absolute w-100" style="top: 0; z-index: 1000;">
+    <div class="container justify-content-center">
       <ul class="navbar-nav">
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaHomePage.html">Brakar by Silva</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Jewelry</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaCustomPage.html">Custom Service</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Collaborations</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaTermsPage.html">Terms & Conditions</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">News and Media</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Merch</a></li>
+        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaHomePage.html">BrakarbySilva</a></li>
+        <li class="nav-item mx-3"><a class="nav-link" href="#">Jewelry</a></li>
+        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaCustomPage.html">Custom</a></li>
+        <li class="nav-item mx-3"><a class="nav-link" href="#">Collaborations</a></li>
+        <li class="nav-item mx-3"><a class="nav-link" href="#">News</a></li>
+        <li class="nav-item mx-3"><a class="nav-link" href="#">Merch</a></li>
       </ul>
     </div>
+  </nav>
+  
+
+   <div class="hero-section">
+    <div>
+      <h1 class="display-3 fw-bold text-white mb-4">Brakar Silva Jewelry</h1>
+      <p class="lead text-white mb-5">Terms & Conditions.</p>
+    
+    </div>
   </div>
-</nav>
+    <!-- Accordian reference:   -->
+    <div class="accordion accordion-flush" id="termsAccordion">
+           <div class="accordion accordion-flush" id="termsAccordion">
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+            1. Acceptance of Terms
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            These Terms & Conditions (the “Terms” or “Agreement”) are made and entered into by and between Brakar by Silva Inc, a New York corporation, (referred to in these Terms as “Brakar”, “we”, “us” or “our”), which is the operator of the website www.BrakarbySilva.com (the “Website”), and you, a user of the Website (referred to in these Terms as “User”, “you” or “your”). This Agreement applies when you access the Website. If you do not agree to the Terms contained herein, you may not access, visit, or use the Website. 
 
-<!-- Hero Section -->
-<div class="hero-section">
-  <div>
-    <h1 class="display-3 fw-bold text-white mb-4">Brakar Silva Jewelry</h1>
-    <p class="lead text-white fw-bold mb-5">Terms & Conditions</p>
-  </div>
-</div>
+            BEFORE YOU PROCEED, PLEASE READ THESE TERMS CAREFULLY. THIS AGREEMENT CONTAINS WARRANTY AND LIABILITY DISCLAIMERS. YOU AGREE TO ABIDE BY AND BE BOUND BY THE TERMS DESCRIBED HEREIN AND BY ALL TERMS, POLICIES AND GUIDELINES INCORPORATED BY REFERENCE IF YOU DO NOT AGREE TO THESE TERMS, YOU ARE NOT AUTHORIZED TO USE OUR WEBSITE.
+          </div>
+        </div>
+      </div>
 
-<!-- Accordion Terms Placeholder -->
-<div class="container py-5">
-  <div class="accordion accordion-flush" id="termsAccordion">
-    <!-- Terms content goes here -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            2. Website Operator
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            Through the Website, Brakar sells luxury jewelry, including, but not limited to rings, necklaces, bracelets, pendants, and earrings, as well as apparel, accessories and artwork (collectively, the “Products”). Some of our Products have already been designed and are offered for sale in our online shop and/or collections (the “Shop Products”), while other Products can be custom ordered through our custom inquiry submission (the “Custom Products”). Our Website also includes a gallery featuring previous works created by Brakar (“LookBook”). 
+          </div>
+        </div>
+      </div>
 
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            3. Purchasing Shop Products
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            Subject to your compliance with these Terms, you may purchase the Shop Products made available on the Website. When browsing our Website, in order to purchase one or more Shop Products, you must first choose from any available options, such as color, length, size, and/or quantity of the Shop Goods, and then add the item to your online shopping cart (the “Cart”). Once you have added all Shop Products that you wish to purchase to your Cart, by going to your Cart you have an opportunity to review your order, including a description of the Shop Products, the order subtotal, shipping, and taxes. Once you have confirmed or made any necessary modifications to your order, you then must enter in your billing and shipping details, as well as credit card payment information. You agree to provide only true, accurate, current and complete information in connection with any purchase of Shop Products. By clicking “Place Order”, you confirm your agreement to purchase the applicable Shop Products and agree that we may charge you for the total cost displayed to you at such time. You understand and agree we may change the price for Shop Products from time to time, in our sole discretion, and it is your responsibility to confirm the total price displayed to you before you click “Place Order”. Changes to applicable fees are effective upon posting the changes on the Website.
+
+            Although Brakar has made every effort to display our Shop Products and their colors and appearance as accurately as possible, the displayed attributes of the Shop Products depend upon the monitor of the User, and Brakar cannot guarantee that the User’s monitor will accurately portray the actual attributes of the Shop Products. Shop Products displayed may be out of stock or discontinued, and prices are subject to change. Brakar is not responsible for typographical errors regarding price or any other matter.
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            4. Purchasing Custom Products
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            SUBJECT TO YOUR COMPLIANCE WITH THESE TERMS, YOU MAY  MAKE INQUIRES TO US REGARDING A DESIRE TO PURCHASE A CUSTOM PRODUCT FROM US. CUSTOM PRODUCTS BEGIN AT $3,000, AND ANY REQUESTS THAT DO NOT MEET THIS AMOUNT WILL NOT BE CONSIDERED.
+
+            You may request a Custom Product by submitting the information requested on our “Custom Inquiries” page of the Website. Such information must include, but may not be limited to, your name and email address, the requested type of jewelry, gold quality and color, and specifying other details such as the dimensions and whether you intend to include diamonds in the Custom Product. You may also submit any designs, sketches, or other types of files that further explain how you desire the Custom Product to be created. You agree to provide only true, accurate, current and complete information in connection with any submission for a Custom Product, and further agree not to submit any type of file, virus, software, or other program that is capable of causing any damage, harm, interruption, or other failure to the Website, Brakar, or any other Users. If you do not provide all information requested, your submission will be discarded.
+
+            You further understand and agree that submitting a request for a Custom Product does not guarantee that we will create the Custom Product for you, and we will first review your submission to determine, in our sole discretion, whether we can create the Custom Product. We may contact you at the email address you provide in your submission to understand your goals for the creation of the Custom Product as well as your budget. Based on this information, we will then provide you with a written estimate via email. In some cases, we may, in our sole discretion, agree to provide you with a mock-up of the Custom Product for your review. Once you provide us with written confirmation that you desire to purchase the Custom Product, unless we otherwise agree in writing, you must submit payment of a non-refundable deposit, equaling fifty (50%) percent of the estimate, through the Website before production of the Custom Product begins. 
+
+            Depending on the complexity of the Custom Design, production can vary anywhere from two (2) weeks to multiple months. Once production has been completed, we will notify you via email, at which point you must then submit payment for the remaining fifty (50%) percent of the estimate. No Custom Products will be shipped to you unless and until we receive full payment of the estimate. 
+
+            DISCLAIMER: ALTHOUGH WE DO OUR BEST TO ENSURE THE AMOUNT OF THE ESTIMATE FOR CUSTOM PRODUCTS IS ACCURATE, THERE MAY BE RARE INSTANCES WHERE WE MAY NEED TO ADJUST THE PRICE BASED ON A NUMBER OF FACTORS, AS DETERMINED IN OUR SOLE DISCRETION. IN THE EVENT THAT WE INCUR ANY EXTRA COSTS OR EXPENSES IN THE PRODUCTION PROCESS BEYOND THE AMOUNT OF THE ESTIMATE, THEN WE WILL NOTIFY YOU VIA EMAIL, AND THEREAFTER YOU SHALL BE RESPONSIBLE FOR PAYMENT OF THE REMAINING AMOUNT OF THE REVISED TOTAL COST BEFORE WE WILL SHIP THE CUSTOM PRODUCT TO YOU. IF YOU DO NOT PAY SUCH REVISED TOTAL COST IN FULL, THEN WE MAY ALLOW YOU TO CANCEL THE ORDER; PROVIDED, HOWEVER, THAT THE INITIAL FIFTY (50%) PERCENT DEPOSIT IS NON-REFUNDABLE AND WILL NOT BE RETURNED TO YOU.
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            5. Payment Processing
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            When you make a purchase of any Products through the Website, you authorize Brakar and its third-party payment processors, including Shopifypayments and Stripe, to charge the credit card identified by you for the total cost including, shipping and taxes. You further represent and warrant that you are (1) providing true, accurate, current and complete information, and (2) authorized to use such credit card for the purpose of making such purchase. You acknowledge and agree to abide by any applicable terms and conditions of WooCommerce and Stripe, which can be accessed at the following links:
+
+            <p><center>Shopify Payments:</center></p>
+
+            <p><center>https://www.shopify.com/legal/terms-payments-us</center></p>
+
+            <p><center>Paypal:</center></p>
+
+            <p><center>https://www.paypal.com/us/webapps/mpp/ua/useragreement-full</center></p>
+
+<p>You further authorize Brakar, Shopify Payments, and/or PayPal to store your credit card information. If Brakar does not receive payment from your credit card provider, Products will not be shipped to you until Brakar receives payment. 
+
+In some cases, depending on the total amount of an order of Products, we may request that you submit further documentation to verify your identity and authorize the transaction, including signing a credit card authorization form and providing a copy of valid government-issued identification. We may request such documentation either before or after you have submitted payment for an order for Products. If you refuse to provide such documentation, we may, in our sole discretion, cancel your order and will refund the purchase price, minus any processing fees and other costs that we incur.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            6. Promotions and Discounts
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           From time to time, Brakar may offer certain promotions and discounts related to our Products. To qualify for such promotional discounts, you may be required to enter a unique discount code prior to finalizing your order. Certain Products or payment options may not be eligible, and any further rules and restrictions will be disclosed at the time promotional offers are presented to you. By participating in a promotion or discount, you agree to any such applicable rules and restrictions. If you have any questions regarding promotional offers, please contact Brakar at support@brakarbysilva.com. 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            7. Shipping and Returns
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           Any shipments or returns of Products purchased through the Website are subject to our Shipping & Returns Policy, which can be accessed at _____________ and is incorporated herein by reference.
+            No Satisfaction Guarantee. Due to an individual’s subjective style and opinions, Brakar cannot guarantee a purchaser’s satisfaction of any Products ordered from us. Although Brakar has made every effort to display our Products and their colors and appearance as accurately as possible, the displayed attributes of the Products depend upon the computer capabilities of the User, and Brakar cannot guarantee that the User’s computer or device will accurately portray the actual attributes of the Products.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            8. Jewelry Care
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           While you agree that Brakar shall not be responsible for, and that you release and hold Brakar harmless from, any and all liability related to damage to a Product once it is delivered to you, we recommend that you regularly clean any jewelry Products you purchase from us. We recommend that you use mild soap and water to clean any jewelry Products you purchase. We also offer a cleaning solution Product that is safe to use on all of our jewelry Products. You should avoid using any other type of chemical cleaners, abrasive polishing agents, or chlorine. We also recommend that you remove all jewelry Products before engaging in any exercise, before going to sleep, or when showering, swimming, etc., and that you put your jewelry Products on after bathing, spraying perfumes or hairsprays, or applying any lotions and cosmetics.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            9. Electronic Communication
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            If you provide us with your email address, we may send you various types of electronic communication including newsletters, requests for information, updates, new promotions, discounts, and other communications (“Communications”) regarding the Website and our Products. Providing your e-mail address confirms your ability and consent to receive Communications electronically, rather than in paper form. To withdraw your consent to receive electronic Communications, please write us by e-mail at Support@brakarbysilva.com with the subject line: “Unsubscribe from Electronic Communications.” In addition, our communications themselves may include the opportunity to opt out. For example, our e-mails may include an unsubscribe link. 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            10. Privacy Policy 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            In connection with your use of the Website, you expressly agree to our Privacy Policy, which can be accessed at ______ (“Privacy Policy”). Please read the Privacy Policy carefully in order to learn more about how we use information we collect from you when you access, visit or use the Website. The Privacy Policy is part of and is governed by these Terms and by agreeing to the Terms, you agree to be bound by the terms of the Privacy Policy, and you agree that we may use information collected from you in accordance with the Privacy Policy. 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            11. Prohibited Activities
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            You may not access or use the Website for any purpose other than the purpose for which we make it available to you. We may prohibit certain activities in connection with the Website in our discretion. These prohibited activities include, without limitation, the following: 
+           
+    <p><center> - Criminal or tortious activity, including fraud, trafficking in obscene material, drug dealing, gambling, harassment, stalking, spamming, copyright infringement, patent infringement, trademark infringement, or theft of trade secrets.</center></p>
+    <p><center> - Using any information obtained from the Website in order to contact, advertise to, solicit or sell any products or services to any User without their prior explicit consent.</center></p>
+    <p><center> - Interfering with, disrupting or creating an undue burden on the Website or the networks or services connected to the Website.</center></p>
+    <p><center> - Attempting to impersonate another User or person.</center></p>
+   <p><center>  - Using any information obtained from the Website in order to harass, abuse or harm another person.</center></p>
+    <p><center> - Using the Website in a manner inconsistent with any and all applicable laws and regulations. </center></p>
+    <p><center> - Using or otherwise accessing the Website for any reason other than a good faith interest in being matched with Agencies. </center></p>
+    <p><center> - Undertaking any activity which infringes on our or any third-party’s copyright, patent, trademark, trade secret or other proprietary rights or rights of publicity and privacy.</center></p>
+    <p><center> - Posting or submitting any content which is libelous, defamatory, threatening, harassing, invasive of privacy, abusive, tortious, hateful, discriminatory, pornographic or obscene.</center></p>
+    <p><center> - Transmitting any trade secret or other material, non-public information about any person, company or entity without the authorization to do so.</center></p>
+    <p><center> - Restricting or inhibiting any other visitor from using the Website, including without limitation, by means of “hacking” or defacing any portion of the Website.</center></p>
+    <p><center> - Modifying, adapting, sub-licensing, translating, selling, reverse engineering, decompiling, or disassembling any portion of the Website.</center></p>
+    <p><center> - Removing any copyright, trademark or other proprietary rights notices contained in the Website.</center></p>
+    <p><center> - Distributing any virus, worm or other similar or deleterious files, scripts or programming routines through the Website.</center></p>
+    <p><center> - Using any robot, spider, site search/retrieval application, or other manual or automatic device or process to retrieve, index, “data mine” the Website or in any way reproduce or circumvent the navigational structure or presentation of the Website or its contents, authentications and security measures.</center></p>
+    <p><center> - Attempting to reverse engineer, decompile, disassemble or otherwise attempt to discover the source code, object code or underlying structure, ideas, know-how, or algorithms relevant to the Website</center></p>
+   <p><center>  - Modifying, translating, or creating derivative works based on the Website or Products.</center></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            12. Intellectual Property Rights
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            The Website and its contents, including any text, graphics, logos, button icons, images, audio clips, digital downloads, and data compilations, including but not limited to the trademarks “Brakar By Silva” and “Brakar” are the intellectual property of Brakar or its licensors and constitute trademarks, patents, copyrights and other intellectual property rights of Brakar or its licensors under U.S. and foreign laws and international conventions. 
+
+            You are prohibited from using any such trademark displayed through the Website for any purpose including, but not limited to, use as meta tags on other pages or websites on the World Wide Web, without the written permission of Brakar or such third party, which may own the trademark.
+
+            You agree not to engage in the use, copying or distribution of the Website, any of its contents or any data generated or produced using the Website for any commercial purpose. You agree not to circumvent, disable or otherwise interfere with security related features of the Website. We may, but are not obligated to, periodically provide updates to the Website to resolve bugs or add features and functionality. You do not acquire any ownership rights to the Website, Products, or to any other contents contained on the Website. All rights not expressly granted in these Terms are reserved by Brakar and its respective licensors, affiliates, and contractors. 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            13. User Content
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            You are solely responsible for any data, information, text, files, designs, photographs, comments, feedback, suggestions, ratings, reviews, or other materials you upload or submit to us and/or the Website (“User Content”). You agree that any User Content: (i) will be true and accurate; (ii) will not violate or facilitate the violation of any law or regulation; (iii) will not violate any right held by you or a third-party, such as, but not limited to, trademark, copyright, right of privacy, or right of publicity; and (iv) will not cause any harm, damage, or other injury to the Website, Brakar, another User, or any other person or entity. You are solely responsible for the User Content you submit in connection with the Website, and Brakar assumes no liability for any User Content submitted by you. We reserve the right to remove or modify User Content for any reason, including User Content that we believe violates these Terms or our policies.
+            For any User Content you submit, you grant to Brakar a non-exclusive, fully paid-up, perpetual, irrevocable, royalty-free, transferable right and license to use, display, perform, transmit, copy, modify, delete, adapt, publish, translate, create derivative works from, and distribute such User Content, all without compensation to you, as necessary to provide the Website and Products you purchase to you and for use in our own marketing and promotional material, such as, but not limited to, displaying in our Studio any User Content you provide us in connection with Custom Products. You represent and warrant that you either own directly, or have been legally and validly granted, all rights necessary for you to grant the licenses to Brakar granted in this section. Information that can be used to personally identify you that you provide to us in connection with the Website will be handled accordingly with our Privacy Policy.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            14. DMCA/Copyright Policy
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            Brakar respects the intellectual property of others and expects its Users to do the same. It is our policy, in appropriate circumstances and at our discretion, to disable or terminate access to the Website of any User who repeatedly infringes the rights of copyright holders.
+Brakar will respond appropriately to notices of alleged copyright infringement that comply with the U.S. Digital Millennium Copyright Act (the “DMCA”), as set forth below. If you own copyrights in a work and believe that your intellectual property rights in that work have been infringed by an improper posting or distribution of it via the Website, then you must send Brakar a written notice that includes all the following:
+              <p><center>A legend or subject line that says: “DMCA Copyright Infringement Notice”</center></p>
+              <p><center>A description of the copyrighted work that you claim has been infringed</center></p>
+              <p><center>The URL of the site and a description of where the material that you claim is infringing is located on that site</center></p>
+              <p><center>Your address, telephone number, and e-mail address</center></p>
+              <p><center>A statement by you that you have a good faith belief that the alleged infringing </center></p>material is not authorized by the copyright owner, its agent, or the law</center></p>
+              <p><center>A statement by you, made under penalty of perjury, that all the information in your notice is accurate, and that you are the copyright owner (or, if you are not the copyright owner, then your statement must indicate that you are authorized to act on the behalf of theowner of an exclusive right that is allegedly infringed); and your electronic or physical signature</center></p>
+
+<p>Brakar will only receive DMCA notices by email at suppot@brakarbysilva.com
+Brakar may elect to not respond to DMCA notices that do not comply with all the foregoing requirements, and Brakar may elect to remove allegedly infringing material that comes to its attention via notices that do not comply with the above.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            15. Feedback
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body"> 
+          If you provide us with any comments, bug reports, feedback, ratings, reviews, or modifications proposed or suggested by you to the Website and/or Products (collectively, the “Feedback”), we shall have the right to use such Feedback at our discretion, including, but not limited to the incorporation of such suggested changes into the Website. You hereby grant us a perpetual, irrevocable, non-exclusive license under all rights necessary to incorporate and use your Feedback into our Website for any purpose.
+          </div>
+        </div>
+      </div>
 
 <div class="accordion-item">
-  <h2 class="accordion-header" id="heading-1">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-      1. Acceptance of Terms
-    </button>
-  </h2>
-  <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      These Terms & Conditions (the “Terms” or “Agreement”) are made and entered into by and between Brakar by Silva Inc, a New York corporation, (referred to in these Terms as “Brakar”, “we”, “us” or “our”), which is the operator of the website www.BrakarbySilva.com (the “Website”), and you, a user of the Website (referred to in these Terms as “User”, “you” or “your”). This Agreement applies when you access the Website. If you do not agree to the Terms contained herein, you may not access, visit, or use the Website.
-      <br><br>
-      BEFORE YOU PROCEED, PLEASE READ THESE TERMS CAREFULLY. THIS AGREEMENT CONTAINS WARRANTY AND LIABILITY DISCLAIMERS. YOU AGREE TO ABIDE BY AND BE BOUND BY THE TERMS DESCRIBED HEREIN AND BY ALL TERMS, POLICIES AND GUIDELINES INCORPORATED BY REFERENCE. IF YOU DO NOT AGREE TO THESE TERMS, YOU ARE NOT AUTHORIZED TO USE OUR WEBSITE.
-    </div>
-  </div>
-</div>
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            16. Disclaimer of Warranties 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            THE WEBSITE AND ANY PRODUCTS, CONTENT, SERVICES, OR THIRD-PARTY SITES MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE WEBSITE AND/OR ANY MOBILE VERSION THEREOF ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, Brakar, ON BEHALF OF ITSELF AND ITS SUBSIDIARIES, AFFILIATES, PARTNERS, OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS, DISCLAIMS AND EXCLUDES ALL WARRANTIES, WHETHER STATUTORY, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, DURABILITY, TITLE, AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS. 
 
-<!-- Section 2 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-2">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-      2. Website Operator
-    </button>
-  </h2>
-  <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Through the Website, Brakar sells luxury jewelry, including but not limited to rings, necklaces, bracelets, pendants, and earrings, as well as apparel, accessories, and artwork. Some Products are pre-designed and available for purchase; others can be custom ordered through inquiry submission.
-    </div>
-  </div>
-</div>
+            WITHOUT LIMITING THE FOREGOING, Brakar DOES NOT REPRESENT OR WARRANT (I) THAT THE WEBSITE AND ANY PRODUCTS, CONTENT, SERVICES, OR SITES MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE WEBSITE WILL BE UNINTERRUPTED OR ERROR-FREE, (II) THAT DEFECTS WILL BE CORRECTED, OR THAT THE WEBSITE AND ANY SOFTWARE, CONTENT, SERVICES, OR SITES MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE WEBSITE OR THE SERVER THAT MAKES THEM AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR (III) REGARDING THE USE OF THE WEBSITE AND ANY PRODUCT, CONTENT, SERVICES, OR SITES MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE WEBSITE IN TERMS OF CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. ANY MATERIAL OR DATA THAT YOU DOWNLOAD OR OTHERWISE OBTAIN THROUGH THE WEBSITE IS AT YOUR OWN RISK. YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGES TO YOUR COMPUTER SYSTEM OR LOSS OF DATA RESULTING FROM THE DOWNLOAD OF SUCH MATERIAL OR DATA. 
 
-<!-- Section 3 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-3">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-      3. Purchasing Shop Products
-    </button>
-  </h2>
-  <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      You may purchase Shop Products available on the Website by selecting options and proceeding through checkout. We reserve the right to change prices or availability. Colors and appearance may vary by monitor. Brakar is not liable for typographical errors.
-    </div>
-  </div>
-</div>
+            Certain state laws do not allow limitations on implied warranties or the exclusion or limitation of certain damages. If these laws apply to you, some or all of the above disclaimers, exclusions, or limitations may not apply to you, and you might have additional rights.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 4 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-4">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-      4. Purchasing Custom Products
-    </button>
-  </h2>
-  <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      You may request a Custom Product by submitting an inquiry. Custom Products start at $3,000. Submission does not guarantee acceptance. A 50% non-refundable deposit is required upon acceptance, with full payment due prior to shipment.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            17. Limitation of Liability  
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            IN NO EVENT SHALL Brakar BE LIABLE TO YOU OR TO ANY THIRD PARTY FOR ANY LOSS OF USE, REVENUE, OR PROFIT OR DIMINUTION IN VALUE, OR FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL, OR PUNITIVE DAMAGES WHETHER ARISING OUT OF BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, REGARDLESS OF WHETHER SUCH DAMAGE WAS FORESEEABLE AND WHETHER OR NOT Brakar HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND NOTWITHSTANDING THE FAILURE OF ANY AGREED OR OTHER REMEDY OF ITS ESSENTIAL PURPOSE. IN NO EVENT SHALL Brakar’s AGGREGATE 
+            LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT, WHETHER ARISING OUT OF OR RELATED TO BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, EXCEED THE AGGREGATE AMOUNTS PAID OR PAYABLE TO Brakar BY YOU.
+            Applicable law may not allow the limitation of liability set forth above, so this limitation of liability may not apply to you.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 5 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-5">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-      5. Payment Processing
-    </button>
-  </h2>
-  <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Payment is processed through Shopify Payments and PayPal. By submitting payment, you agree to their terms. Brakar may request verification for large orders and reserves the right to cancel if not provided.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            18. Indemnification 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            You agree to fully indemnify, defend, and hold Brakar and its subsidiaries, affiliates, partners, officers, directors, employees, agents, and other representatives, harmless from and against any and all claims, damages, losses, costs (including reasonable attorneys’ fees), and other expenses that arise directly or indirectly out of or from: (i) your access to, use of, or alleged use of, the Website or the services or goods obtained through your use of the Website, including, but not limited to, Products; (ii) any User Content you upload or submit to us; (iii) your breach or violation of the terms in this Agreement, any representation, warranty, or covenant referenced in this Agreement, or any applicable law or regulation; (iv) any allegation that any materials you submit to us or transmit to the Website, including, but not limited to, User Content used in connection with a Custom Product, infringe or otherwise violate the copyright, patent, trademark, trade secret, or other intellectual property or other rights of any third-party; (v) your activities in connection with the Website or other websites to which the Website is linked; (vi) any negligent act or omission or any willful misconduct by you; and/or (vii) any inaccuracies in the information provided to you through the Website. 
+          </div>
+        </div>
+      </div>
 
-<!-- Section 6 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-6">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
-      6. Promotions and Discounts
-    </button>
-  </h2>
-  <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      From time to time, Brakar may offer promotions or discounts. Rules and restrictions apply and will be disclosed. You agree to any such rules when participating.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            19. Arbitration 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            For purposes of this Agreement, you and Brakar are each referred to as a “Party” and collectively, as the “Parties”. The Parties shall use their best efforts to settle any dispute, claim, question, or disagreement directly through consultation and good faith negotiations for a period of at least thirty (30) days from initial written notice thereof, which shall be a requirement prior to either Party initiating a lawsuit or arbitration. All claims arising out of or relating to these Terms (including its formation, performance and breach), the Website, and any purchased Products, shall be finally settled by binding arbitration administered by the American Arbitration Association (“AAA”) in accordance with the provisions of its Consumer Arbitration Rules, excluding any rules or procedures governing or permitting class actions. The arbitrator, and not any federal, state or local court or agency, shall have exclusive authority to resolve all disputes arising out of or relating to the interpretation, applicability, enforceability or formation of these Terms, including, but not limited to, any claim that all or any part of these Terms is void or voidable. The arbitrator shall be empowered to determine the validity of any claim and to grant whatever relief would be available in a court under law or in equity. The arbitrator’s award shall be binding on the Parties and may be entered as a judgment in any court of competent jurisdiction. To the extent the filing fee for the arbitration exceeds the cost of filing a lawsuit, we will pay the additional cost.
+            <p>You understand that, absent this mandatory provision, you would have the right to sue in court and have a jury trial. You further understand that, in some instances, the costs of arbitration could exceed the costs of litigation and the right to discovery may be more limited in arbitration than in court.</p>
 
-<!-- Section 7 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-7">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
-      7. Shipping and Returns
-    </button>
-  </h2>
-  <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Shipments and returns are subject to our Shipping & Returns Policy. Brakar does not guarantee satisfaction. Color and appearance of products may vary.
-    </div>
-  </div>
-</div>
+          </div>
+        </div>
+      </div>
 
-<!-- Section 8 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-8">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
-      8. Jewelry Care
-    </button>
-  </h2>
-  <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Jewelry should be cleaned with mild soap and water. Avoid harsh chemicals, chlorine, and remove jewelry before physical activity, bathing, or sleeping.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            20. Class Action Waiver
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            The Parties further agree that any arbitration shall be conducted in their individual capacities only and not as a class action or other representative action, and the Parties expressly waive their right to file a class action or seek relief on a class basis. If any court or arbitrator determines that the class action waiver set forth in this paragraph is void or unenforceable for any reason or that an arbitration can proceed on a class basis, then the arbitration provision set forth above shall be deemed null and void in its entirety and the Parties shall be deemed to have not agreed to arbitrate disputes.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 9 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-9">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
-      9. Electronic Communication
-    </button>
-  </h2>
-  <div id="collapse-9" class="accordion-collapse collapse" aria-labelledby="heading-9" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      By providing your email, you agree to receive electronic communications. You may opt-out at any time by following instructions in our emails.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            21. Exception – Litigation of Small Claims Court Claims 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            Notwithstanding the Parties’ decision to resolve all disputes through arbitration, either Party may also seek relief in a small claims court for disputes or claims within the scope of that court’s jurisdiction and subject to that court’s rules of procedure for small claims.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 10 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-10">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
-      10. Privacy Policy
-    </button>
-  </h2>
-  <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Your use of the Website constitutes your agreement to our Privacy Policy. Please read it to understand how we collect and use your information.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            20. Thirty Day Right to Opt-Out 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            You have the right to opt-out and not be bound by the arbitration and class action waiver provisions set forth this Agreement by sending written notice of your decision to opt-out to Support@brakarbysilva.com. The notice must be sent within thirty (30) days of your first access to the Website, otherwise you shall be bound to arbitrate disputes in accordance with the terms set forth above. If you opt-out of these arbitration provisions, we also will not be bound by them. In addition, if you elect to opt-out of these arbitration provisions, we may terminate your use of the Website.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 11 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-11">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
-      11. Prohibited Activities
-    </button>
-  </h2>
-  <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      You may not use the Website for any unlawful or unauthorized purpose. This includes, but is not limited to, harassment, hacking, spamming, or distributing malware.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            22. Governing Law and Jurisdiction 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+            You agree that your use of the Website shall be governed by and construed in accordance with the laws of New York, without regard to conflict of law rules. The courts of New York, New York shall have exclusive jurisdiction to adjudicate any dispute arising under or in connection with this Agreement.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 12 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-12">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
-      12. Intellectual Property Rights
-    </button>
-  </h2>
-  <div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      All content on the Website is the property of Brakar or its licensors and protected by intellectual property laws. You may not copy, reuse, or distribute without permission.
-    </div>
-  </div>
-</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            23. Amendments 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           These Terms may be amended by Brakar from time to time. You agree that you will review these Terms prior to using the Website, and that your participation and continued use of the Website will constitute acceptance of these Terms, as they may be amended from time to time. A new version of this Agreement will take effect on (i) the date falling thirty (30) calendar days after the date of such posting (or such later date as we indicate in the relevant posting) if any of the changes are to an operative provision of this Agreement which is capable of adversely affecting you, or (ii) immediately upon the date of posting or such later date as we indicate in the relevant posting if the changes are not capable of adversely affecting you, examples of which would include, without limitation: (a) changing the name of the web address for the Website or (b) the refinement of provisions that are already included or referred to in this Agreement. In either case, if you do not wish to be governed by the new version of this Agreement, you must notify us and agree there shall be no further provision of or access to the Website. We shall not have any liability to you in such an event. 
+          </div>
+        </div>
+      </div>
 
-<!-- Section 13 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-13">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13">
-      13. User Content
-    </button>
-  </h2>
-  <div id="collapse-13" class="accordion-collapse collapse" aria-labelledby="heading-13" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      You are responsible for any content you submit. By submitting content, you grant Brakar a license to use it for promotional or operational purposes.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            24. Third Parties
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           These Terms are between you and Brakar. The foregoing notwithstanding, please note that the Website may enable access to third-party content, products and services over which we have no control, including but not limited to, payment services provided by Stripe and shipping logistics services from Shipstation and FedEx. You understand and agree that any interactions you have with any third-party through or as a result of your use of the Website may be governed by such third-party’s terms of use, privacy policies, or other rules or agreements, which may differ from the terms of this Agreement. We assume no responsibility for, nor do we endorse or verify the content, services, offerings or conduct of such third party. Inclusion of a third party on the Website does not amount to endorsement or verification by Brakar. We make no warranties or representations with respect to the accuracy, completeness or timeliness of any content made available to you through Website from any third-party, nor any acts they may take, or omit to take, in relation to the Website. 
+          </div>
+        </div>
+      </div>
 
-<!-- Section 14 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-14">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-14" aria-expanded="false" aria-controls="collapse-14">
-      14. DMCA/Copyright Policy
-    </button>
-  </h2>
-  <div id="collapse-14" class="accordion-collapse collapse" aria-labelledby="heading-14" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      If you believe content on the Website infringes your copyright, please notify us via a valid DMCA takedown request. Details on what to include are listed in our full DMCA policy.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            25. Operation of the Website
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           You acknowledge that we reserve the right, but have no obligation, to (i) take appropriate legal action against anyone who, in our sole determination, violates these Terms, including, without limitation, reporting to law enforcement authorities, (ii) in our sole discretion and without limitation, refuse, restrict access to or availability of, or disable all or a portion of the Website, and (iii) otherwise manage the Website in a manner designed to protect the rights and property of Brakar and its licensors and Users, and to facilitate the proper functioning of the Website. 
+          </div>
+        </div>
+      </div>
 
-<!-- Section 15 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-15">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-15" aria-expanded="false" aria-controls="collapse-15">
-      15. Feedback
-    </button>
-  </h2>
-  <div id="collapse-15" class="accordion-collapse collapse" aria-labelledby="heading-15" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Any feedback or suggestions you provide may be used by Brakar without obligation or compensation to you.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            26. Term 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           This Agreement is effective unless and until terminated by either you or us. You may terminate by notifying us that you no longer wish to use our Website via email to support@brakarbysilva.com, or when you cease using our Website.
+            If in our sole judgment you fail, or we suspect that you have failed, to comply with any term or provision of this Agreement, we also may terminate this Agreement at any time without notice and you will remain liable for all amounts due up to and including the date of termination; and/or accordingly may deny you access to our Website (or any part thereof). 
+          </div>
+        </div>
+      </div>
 
-<!-- Section 16 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-16">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-16" aria-expanded="false" aria-controls="collapse-16">
-      16. Disclaimer of Warranties
-    </button>
-  </h2>
-  <div id="collapse-16" class="accordion-collapse collapse" aria-labelledby="heading-16" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      The Website and all content are provided "as is" without warranties of any kind. We disclaim all warranties, express or implied.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            27. Non-Waiver 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           The failure of either Party to exercise in any respect any right provided for herein shall not be deemed a waiver of any further rights hereunder. 
+          </div>
+        </div>
+      </div>
 
-<!-- Section 17 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-17">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-17" aria-expanded="false" aria-controls="collapse-17">
-      17. Limitation of Liability
-    </button>
-  </h2>
-  <div id="collapse-17" class="accordion-collapse collapse" aria-labelledby="heading-17" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Brakar shall not be liable for indirect, incidental, or consequential damages. Our total liability is limited to the amount you paid us for products.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            28. Force Majeure
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           Brakar shall not be liable for any failure to perform its obligations hereunder where the failure results from any cause beyond Brakar’s reasonable control, including, without limitation, any mechanical, electronic or communications failure or degradation, act of god, pandemic, or any other cause whatsoever, which is beyond our reasonable control (“Force Majeure Event”).
+          </div>
+        </div>
+      </div>
 
-<!-- Section 18 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-18">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-18" aria-expanded="false" aria-controls="collapse-18">
-      18. Indemnification
-    </button>
-  </h2>
-  <div id="collapse-18" class="accordion-collapse collapse" aria-labelledby="heading-18" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      You agree to indemnify and hold harmless Brakar from any claims arising out of your use of the Website, your violation of these Terms, or your violation of any third-party rights.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            29. Severability
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect and enforceable.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 19 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-19">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-19" aria-expanded="false" aria-controls="collapse-19">
-      19. Arbitration
-    </button>
-  </h2>
-  <div id="collapse-19" class="accordion-collapse collapse" aria-labelledby="heading-19" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Disputes must be resolved through binding arbitration under AAA rules. No class actions are permitted. This section includes your right to opt out within 30 days.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            30. Assignment
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           These Terms are not assignable, transferable or sublicensable by you except with our prior written consent. We may transfer, assign or delegate these Terms and our related rights and obligations without obtaining your consent.
+          </div>
+        </div>
+      </div>
 
-<!-- Section 20 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-20">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-20" aria-expanded="false" aria-controls="collapse-20">
-      20. Class Action Waiver
-    </button>
-  </h2>
-  <div id="collapse-20" class="accordion-collapse collapse" aria-labelledby="heading-20" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      You agree that arbitration will only occur in your individual capacity and not as a class or collective action. If class arbitration is found invalid, the arbitration provision is void.
-    </div>
-  </div>
-</div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            31. Entire Agreement 
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           These Terms supersede all prior and contemporaneous agreements, representations and warranties and understandings, whether oral or written, with respect to the Website or its contents. Modifications to the Terms that are not posted on the Website are not valid unless made in writing and signed by an authorized representative of Brakar. 
+          </div>
+        </div>
+      </div>
 
-<!-- Section 21 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-21">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-21" aria-expanded="false" aria-controls="collapse-21">
-      21. Exception – Litigation of Small Claims Court Claims
-    </button>
-  </h2>
-  <div id="collapse-21" class="accordion-collapse collapse" aria-labelledby="heading-21" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Either party may bring an individual action in small claims court instead of arbitration, for claims within that court’s jurisdiction.
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            32. Notices
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#termsAccordion">
+          <div class="accordion-body">
+           You consent to receive notices and other communications regarding these Terms through posting of notices on the Website. You agree that all agreements, notices, disclosures, and other communications that Brakar provides to you in accordance with the prior sentence satisfy any legal requirement that such communications be in writing.
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Section 22 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-22">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-22" aria-expanded="false" aria-controls="collapse-22">
-      22. Governing Law and Jurisdiction
-    </button>
-  </h2>
-  <div id="collapse-22" class="accordion-collapse collapse" aria-labelledby="heading-22" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      These Terms are governed by New York law. You agree to submit to the exclusive jurisdiction of courts located in New York, New York.
-    </div>
-  </div>
-</div>
+      </div>
 
-<!-- Section 23 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-23">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-23" aria-expanded="false" aria-controls="collapse-23">
-      23. Amendments
-    </button>
-  </h2>
-  <div id="collapse-23" class="accordion-collapse collapse" aria-labelledby="heading-23" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      We reserve the right to amend these Terms at any time. Continued use of the Website after any changes constitutes acceptance of the revised Terms.
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Section 24 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-24">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-24" aria-expanded="false" aria-controls="collapse-24">
-      24. Third Parties
-    </button>
-  </h2>
-  <div id="collapse-24" class="accordion-collapse collapse" aria-labelledby="heading-24" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Our Website may link to third-party sites. We are not responsible for their content, policies, or practices.
+  <footer>
+    <div class="container">
+      <p class="text-gold">Latest from Brakar by Silva</p>
+      <p>Be the first to know about exciting new designs, special sales, events, collaborations and more.</p>
+      <form class="d-flex justify-content-center mb-3">
+        <input type="email" class="form-control w-25 me-2" placeholder="Email">
+        <button class="btn btn-gold" type="submit">Sign Up</button>
+      </form>
+      <div class="footer-links">
+        <a href="BrakarbySilvaTermsPage.html">Terms & Conditions</a>
+        <a href="#">Shipping & Return Policy</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="mt-3">
+        <p>Call / Text (US): 929 507 6040 | Email: Support@brakarbysilva.com</p>
+        <p>Address: 55 W 45th Street, New York, NY 10036</p>
+        <p>Hours: Monday–Friday | 10:00AM–6:00PM EST</p>
+      </div>
     </div>
-  </div>
-</div>
+  </footer>
 
-<!-- Section 25 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-25">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-25" aria-expanded="false" aria-controls="collapse-25">
-      25. Operation of the Website
-    </button>
-  </h2>
-  <div id="collapse-25" class="accordion-collapse collapse" aria-labelledby="heading-25" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      We reserve the right to modify, suspend, or restrict the Website for any reason at our sole discretion.
-    </div>
-  </div>
-</div>
-
-<!-- Section 26 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-26">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-26" aria-expanded="false" aria-controls="collapse-26">
-      26. Term
-    </button>
-  </h2>
-  <div id="collapse-26" class="accordion-collapse collapse" aria-labelledby="heading-26" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      These Terms are effective until terminated by you or us. We may terminate this agreement if you fail to comply with the Terms.
-    </div>
-  </div>
-</div>
-
-<!-- Section 27 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-27">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-27" aria-expanded="false" aria-controls="collapse-27">
-      27. Non-Waiver
-    </button>
-  </h2>
-  <div id="collapse-27" class="accordion-collapse collapse" aria-labelledby="heading-27" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Failure to enforce any part of these Terms shall not be deemed a waiver of any other right or provision.
-    </div>
-  </div>
-</div>
-
-<!-- Section 28 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-28">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-28" aria-expanded="false" aria-controls="collapse-28">
-      28. Force Majeure
-    </button>
-  </h2>
-  <div id="collapse-28" class="accordion-collapse collapse" aria-labelledby="heading-28" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      We are not liable for any failure to perform due to causes beyond our reasonable control, such as natural disasters, pandemics, or power failures.
-    </div>
-  </div>
-</div>
-
-<!-- Section 29 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-29">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-29" aria-expanded="false" aria-controls="collapse-29">
-      29. Severability
-    </button>
-  </h2>
-  <div id="collapse-29" class="accordion-collapse collapse" aria-labelledby="heading-29" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      If any provision of these Terms is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.
-    </div>
-  </div>
-</div>
-
-<!-- Section 30 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-30">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-30" aria-expanded="false" aria-controls="collapse-30">
-      30. Assignment
-    </button>
-  </h2>
-  <div id="collapse-30" class="accordion-collapse collapse" aria-labelledby="heading-30" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      You may not assign your rights under these Terms. We may assign these Terms without your consent.
-    </div>
-  </div>
-</div>
-
-<!-- Section 31 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-31">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-31" aria-expanded="false" aria-controls="collapse-31">
-      31. Entire Agreement
-    </button>
-  </h2>
-  <div id="collapse-31" class="accordion-collapse collapse" aria-labelledby="heading-31" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      These Terms constitute the entire agreement between you and Brakar regarding the Website and supersede all prior agreements.
-    </div>
-  </div>
-</div>
-
-<!-- Section 32 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="heading-32">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-32" aria-expanded="false" aria-controls="collapse-32">
-      32. Notices
-    </button>
-  </h2>
-  <div id="collapse-32" class="accordion-collapse collapse" aria-labelledby="heading-32" data-bs-parent="#termsAccordion">
-    <div class="accordion-body">
-      Notices under these Terms shall be provided via email or posted to the Website. Such notices satisfy any legal requirement that they be in writing.
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <p class="text-gold">Latest from Brakar by Silva</p>
-    <p>Be the first to know about exciting new designs, special sales, events, collaborations and more.</p>
-    <form class="d-flex justify-content-center mb-3">
-      <input type="email" class="form-control w-25 me-2" placeholder="Email">
-      <button class="btn btn-gold" type="submit">Sign Up</button>
-    </form>
-    <div class="footer-links">
-      <a href="BrakarbySilvaTermsPage.html">Terms & Conditions</a>
-      <a href="#">Shipping & Return Policy</a>
-      <a href="#">Privacy Policy</a>
-    </div>
-    <div class="mt-3">
-      <p>Call / Text (US): 929 507 6040 | Email: Support@brakarbysilva.com</p>
-      <p>Address: 55 W 45th Street, New York, NY 10036</p>
-      <p>Hours: Monday–Friday | 10:00AM–6:00PM EST</p>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
