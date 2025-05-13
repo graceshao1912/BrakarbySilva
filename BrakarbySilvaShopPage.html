@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brakar by Silva | Fresh Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .navbar {
+      background-color: black !important;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 300;
+    }
+
+    .nav-link:hover {
+      color: #f2c94c !important;
+    }
+
+    .btn-gold {
+      background: #f2c94c;
+      color: black;
+      border: none;
+      padding: 12px 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .btn-gold:hover {
+      background: black;
+      color: #f2c94c;
+    }
+
+    .hero-banner {
+      background: url('images/hero.jpg') center center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-banner h1 {
+      font-size: 4rem;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero-banner p {
+      font-size: 1.3rem;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .collab-card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #f2f2f2;
+    }
+
+    .collab-card img {
+      width: 100%;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 60px 0;
+      color: #aaa;
+    }
+
+    .footer-links a {
+      display: block;
+      color: #f2c94c;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .form-control {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .hero-banner h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-banner p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3 px-3 position-absolute w-100" style="top: 0; z-index: 1000;">
+  <div class="container justify-content-center">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaHomePage.html">Brakar by Silva</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaShopPage.html">Jewelry</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaCustomPage.html">Custom Service</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">Collaborations</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaTermsPage.html">Terms & Conditions</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">News and Media</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">Merch</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero-banner">
+  <div><br></br><br></br>
+    <h1 class="fw-bold">Make Every Moment Memorable</h1>
+    <p class="lead mb-4">Handcrafted Luxury. Built to last.</p>
+    <a href="#" class="btn btn-gold">Browse All</a>
+  </div>
+</div>
+
+
+<div class="section bg-light py-4">
+  <div class="container">
+    <div class="row text-center g-3">
+      <div class="col-md-6">
+        <div class="p-3 bg-white h-100 border rounded shadow-sm">
+          <div class="mb-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/104/104678.png" width="30" alt="delivery">
+          </div>
+          <h5 class="fw-bold mb-2">High-End</h5>
+          <p class="mb-2 small">xxxx</p>
+          <a href="#" class="btn btn-outline-dark btn-sm">Shop Now</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 bg-white h-100 border rounded shadow-sm">
+          <div class="mb-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/104/104678.png" width="30" alt="pickup">
+          </div>
+          <h5 class="fw-bold mb-2">Jewelry</h5>
+          <p class="mb-2 small">xxxx</p>
+          <a href="#" class="btn btn-outline-dark btn-sm">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section bg-dark-alt text-center py-5" id="explore">
+  <div class="container">
+    <h2 class="text-gold mb-3">Categories</h2>
+
+    <div class="row justify-content-center g-3">
+      <div class="col-sm-6 col-md-3">
+        <div class="collab-card p-2 bg-black rounded shadow-sm h-100">
+          <img src="images/SamKamara.jpg" alt="Sam Kamara" class="img-fluid rounded mb-2" style="height: 180px; object-fit: cover;">
+          <p class="fw-semibold text-white mb-2 small">Necklaces</p>
+          <button class="btn btn-gold btn-sm">View All</button>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="collab-card p-2 bg-black rounded shadow-sm h-100">
+          <img src="images/Regis.jpg" alt="Regis Prograis" class="img-fluid rounded mb-2" style="height: 180px; object-fit: cover;">
+          <p class="fw-semibold text-white mb-2 small">Bracelets</p>
+          <button class="btn btn-gold btn-sm">View All</button>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="collab-card p-2 bg-black rounded shadow-sm h-100">
+          <img src="images/NeekBucks.jpg" alt="Neek Bucks" class="img-fluid rounded mb-2" style="height: 180px; object-fit: cover;">
+          <p class="fw-semibold text-white mb-2 small">Pendants</p>
+          <button class="btn btn-gold btn-sm">View All</button>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <div class="collab-card p-2 bg-black rounded shadow-sm h-100">
+          <img src="images/NeekBucks.jpg" alt="Neek Bucks Glasses" class="img-fluid rounded mb-2" style="height: 180px; object-fit: cover;">
+          <p class="fw-semibold text-white mb-2 small">Glasses</p>
+          <button class="btn btn-gold btn-sm">View All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h5 class="text-white">Brakar by Silva</h5>
+        <p>Be the first to know about new designs, events, and collaborations.</p>
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Email">
+          <button class="btn btn-gold" type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white">Quick Links</h6>
+        <div class="footer-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Shipping Policy</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white">Contact</h6>
+        <p>Call / Text: 929 507 6040</p>
+        <p>Email: Support@brakarbysilva.com</p>
+        <p>55 W 45th Street, NYC 10036</p>
+        <p>Mon–Fri | 10AM–6PM EST</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
