@@ -74,6 +74,14 @@
       z-index: 1;
       margin-top: 40px;
     }
+    .video-hero-section {
+     height: 80vh;
+    overflow: hidden;
+  }  
+.video-hero-section video {
+  object-fit: cover;
+  }
+
 
     .section {
       padding: 60px 0;
@@ -159,12 +167,17 @@
   </div>
 </nav>
 <!-- Hero Section -->
-<div class="hero-section">
-  <div>
-    <h1 class="display-3 fw-bold text-white mb-4">Brakar Silva Jewelry</h1>
-    <p class="lead text-white fw-bold mb-5">Custom Service</p>
+<div class="video-hero-section position-relative">
+  <video autoplay muted loop playsinline class="w-100 h-100 position-absolute object-fit-cover" style="z-index: 0;">
+    <source src="Videos/design.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5); z-index: 1;"></div>
+  <div class="hero-content position-relative z-2 text-center text-white p-5">
+    <h1 class="display-3 fw-bold mb-4">Brakar Silva Jewelry</h1>
+    <p class="lead fw-bold mb-5">Custom Service</p>
   </div>
 </div>
+
 
 <!-- Video -->
 <div class="container py-5 text-center">
