@@ -14,7 +14,6 @@
       color: #fff;
       padding-top: 75px;
     }
-
     .video-hero-header {
       position: relative;
       height: 50vh;
@@ -25,7 +24,6 @@
       justify-content: center;
       align-items: center;
     }
-
     .bg-video {
       position: absolute;
       top: 0;
@@ -35,7 +33,6 @@
       object-fit: cover;
       z-index: 0;
     }
-
     .header-overlay {
       position: absolute;
       top: 0;
@@ -45,24 +42,20 @@
       background-color: rgba(0, 0, 0, 0.55);
       z-index: 1;
     }
-
     .navbar {
       background-color: #000 !important;
       position: fixed;
       width: 100%;
       z-index: 1000;
     }
-
     .nav-link {
       color: white !important;
       font-weight: 500;
       font-size: 0.9rem;
     }
-
     .nav-link:hover {
       color: #f2c94c !important;
     }
-
     .hero-text {
       position: relative;
       z-index: 2;
@@ -72,23 +65,14 @@
       max-width: 90%;
       margin-top: 40px;
     }
-
-    @media (max-width: 768px) {
-      .hero-text {
-        margin-top: 60px;
-      }
-    }
-
     .hero-text h1 {
       font-size: 3.5rem;
       font-weight: 800;
     }
-
     .hero-text p {
       font-size: 1.5rem;
       font-weight: 500;
     }
-
     .btn-gold {
       background-color: #f2c94c;
       color: #000;
@@ -96,30 +80,25 @@
       font-weight: 600;
       text-transform: uppercase;
     }
-
     .btn-gold:hover {
       background-color: white;
       color: black;
     }
-
     .product-category {
       padding: 60px 15px;
     }
-
     .product-category h2 {
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 30px;
       text-align: center;
     }
-
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 20px;
       padding: 0 20px;
     }
-
     .product-card {
       background-color: #1c1c1c;
       border-radius: 10px;
@@ -129,12 +108,10 @@
       font-size: 0.85rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
     .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(242, 201, 76, 0.3);
     }
-
     .product-card img {
       width: 100%;
       height: 140px;
@@ -142,37 +119,39 @@
       border-radius: 8px;
       margin-bottom: 8px;
     }
-
     .product-card h5 {
       font-size: 0.95rem;
       font-weight: 600;
       color: #f2c94c;
       margin-bottom: 4px;
     }
-
     .product-card p {
       margin: 0;
       font-size: 0.75rem;
       color: #aaa;
     }
-
+    .hover-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .hover-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(242, 201, 76, 0.3);
+      border-color: #f2c94c !important;
+    }
     .modal-content {
       background-color: #fff;
       color: #000;
       border-radius: 8px;
       padding: 20px;
     }
-
     .modal-content h3 {
       font-size: 1.5rem;
       font-weight: 700;
     }
-
     .modal-content .price {
       font-size: 1.1rem;
       font-weight: bold;
     }
-
     .product-carousel img,
     .product-carousel video {
       height: 80px;
@@ -182,30 +161,25 @@
       margin-right: 8px;
       cursor: pointer;
     }
-
     .modal-footer {
       border-top: none;
       padding-top: 10px;
     }
-
     footer {
       background: #000;
       padding: 40px 0;
       color: #fff;
     }
-
     footer h5, footer h6 {
       color: #f2c94c;
       font-weight: 600;
     }
-
     .footer-links a {
       display: block;
       color: #aaa;
       text-decoration: none;
       margin-bottom: 6px;
     }
-
     .footer-links a:hover {
       color: #f2c94c;
     }
@@ -221,12 +195,12 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaHomePage.html">Brakar by Silva</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaShopPage.html">Jewelry</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaCustomPage.html">Custom Service</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">Brakar by Silva</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">Jewelry</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">Custom Service</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#">Collaborations</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="BrakarbySilvaTermsPage.html">Terms & Conditions</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">News and Media</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">Terms</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#">News</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#">Merch</a></li>
       </ul>
     </div>
@@ -242,20 +216,37 @@
   <div class="hero-text">
     <h1>Brakar by Silva Jewelry</h1>
     <p>Crafting timeless custom pieces that celebrate you.</p>
-    <a href="BrakarbySilvaShopPage.html" class="btn btn-gold px-4 py-2 mt-3">Shop Now</a>
+    <a href="#" class="btn btn-gold px-4 py-2 mt-3">Shop Now</a>
   </div>
 </header>
 
-<!-- PRODUCT SECTION -->
+<!-- PRODUCTS -->
 <section class="product-category" id="explore">
   <h2>Featured Products</h2>
   <div class="product-grid container">
-    <div class="product-card" data-bs-toggle="modal" data-bs-target="#productModal">
+    <div class="product-card"
+      data-bs-toggle="modal"
+      data-bs-target="#productModal"
+      data-title="Champion Style Ring"
+      data-desc="Custom handcrafted ring designed for standout impact. Fully customizable with diamond, gold, or platinum options."
+      data-price="$5,600.00"
+      data-img="images/ChampionStyleRing.jpg"
+      data-vid="Videos/ChampionStyleRingCustom.mp4"
+      data-alt="Videos/ChampionStyleRingAlternate.mp4">
       <img src="images/ChampionStyleRing.jpg" alt="Champion Style Ring">
       <h5>Champion Style Ring</h5>
       <p>Custom Piece</p>
     </div>
-    <div class="product-card" data-bs-toggle="modal" data-bs-target="#productModal">
+
+    <div class="product-card"
+      data-bs-toggle="modal"
+      data-bs-target="#productModal"
+      data-title="5 Pointer Diamond Tennis Chain"
+      data-desc="Elegant 5 pointer tennis chain with top-tier VS diamonds. Crafted in solid white gold."
+      data-price="$14,820.00"
+      data-img="images/5PointerDiamondTennisChain.jpg"
+      data-vid="Videos/5PointerDiamondTennisChain.mp4"
+      data-alt="">
       <img src="images/5PointerDiamondTennisChain.jpg" alt="5 Pointer Chain">
       <h5>5 Pointer Diamond Tennis Chain</h5>
       <p>$14,820.00</p>
@@ -263,7 +254,7 @@
   </div>
 </section>
 
-<!-- PRODUCT MODAL -->
+<!-- MODAL -->
 <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
@@ -272,40 +263,36 @@
           <div class="col-md-6">
             <div class="tab-content" id="productMediaContent">
               <div class="tab-pane fade show active" id="media-img">
-                <img src="images/ChampionStyleRing.jpg" class="img-fluid rounded w-100" alt="Product">
+                <img src="" class="img-fluid rounded w-100" alt="Product">
               </div>
               <div class="tab-pane fade" id="media-vid">
                 <video class="w-100 rounded" muted controls playsinline>
-                  <source src="Videos/ChampionStyleRingCustom.mp4" type="video/mp4">
+                  <source src="" type="video/mp4">
                 </video>
               </div>
               <div class="tab-pane fade" id="media-alt">
                 <video class="w-100 rounded" muted controls playsinline>
-                  <source src="Videos/ChampionStyleRingAlternate.mp4" type="video/mp4">
+                  <source src="" type="video/mp4">
                 </video>
               </div>
             </div>
             <div class="product-carousel d-flex flex-wrap mt-3" role="tablist">
               <button class="btn p-0 border-0 bg-transparent me-2" data-bs-toggle="tab" data-bs-target="#media-img">
-                <img src="images/ChampionStyleRing.jpg" alt="Image 1">
+                <img src="" alt="Preview Image">
               </button>
               <button class="btn p-0 border-0 bg-transparent me-2" data-bs-toggle="tab" data-bs-target="#media-vid">
-                <video muted playsinline>
-                  <source src="Videos/ChampionStyleRingCustom.mp4" type="video/mp4">
-                </video>
+                <video muted playsinline><source src="" type="video/mp4"></video>
               </button>
               <button class="btn p-0 border-0 bg-transparent" data-bs-toggle="tab" data-bs-target="#media-alt">
-                <video muted playsinline>
-                  <source src="Videos/ChampionStyleRingAlternate.mp4" type="video/mp4">
-                </video>
+                <video muted playsinline><source src="" type="video/mp4"></video>
               </button>
             </div>
           </div>
           <div class="col-md-6 d-flex flex-column justify-content-between">
             <div>
-              <h3>Champion Style Ring</h3>
-              <p class="description">Custom handcrafted ring designed for standout impact. Fully customizable with diamond, gold, or platinum options.</p>
-              <p class="price text-dark">$5,600.00</p>
+              <h3></h3>
+              <p class="description"></p>
+              <p class="price text-dark"></p>
             </div>
             <div class="mt-auto">
               <button class="btn btn-dark w-100 mb-3">Inquire Now</button>
@@ -319,6 +306,375 @@
     </div>
   </div>
 </div>
+
+<!-- SHOP BY CATEGORY -->
+<!-- Modified SHOP BY CATEGORY with expandable product gallery -->
+<!-- Modified SHOP BY CATEGORY with popup gallery modal -->
+<section class="bg-light text-dark py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Shop by Category</h2>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 justify-content-center">
+
+      <!-- Category Card -->
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#ringsModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/PetalRingWithDiamonds.jpg" class="img-fluid rounded mb-1" alt="Rings">
+            <h6 class="small">Rings</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#necklacesModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/WhiteandBrownDiamondNecklace.jpg" class="img-fluid rounded mb-1" alt="Necklaces">
+            <h6 class="small">Necklaces</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#braceletsModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/BlueOvalSapphireBracelet.jpg" class="img-fluid rounded mb-1" alt="Bracelets">
+            <h6 class="small">Bracelets</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#earringsModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/OvaDiamondEarrings.jpg" class="img-fluid rounded mb-1" alt="Earrings">
+            <h6 class="small">Earrings</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rings Modal -->
+<div class="modal fade" id="ringsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Rings Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Pink Sapphire Ring With White Diamonds.jpg" class="card-img-top" alt="Ring 1">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Pink Sapphire Ring With White Diamonds</h6>
+                <p class="card-text small">$8,545.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Multi-Color Briolette Stone Dangle Ring.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Multi-Color Briolette Stone Dangle Ring</h6>
+                <p class="card-text small">$6,000.00</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Pave Eternity Band 14K Gold.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Pave Eternity Band 14K Gold</h6>
+                <p class="card-text small">$4,320.00</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Three Interlocking Rings.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Three Interlocking Rings</h6>
+                <p class="card-text small">$3,900.00</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Petal Ring With Diamonds.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Petal Ring With Diamonds</h6>
+                <p class="card-text small">$3,820.00</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Emerald Ring.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Emerald Ring</h6>
+                <p class="card-text small">$3,450.00</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Two Tone Cross Band Ring with Diamonds.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Two Tone Cross Band Ring with Diamonds</h6>
+                <p class="card-text small">$2,800.00</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Queen Ring with Diamonds.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Queen Ring with Diamonds</h6>
+                <p class="card-text small">$2,150.00</p>
+              </div>
+            </div>
+          </div>
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Diamonds all Around Ring, 10K White Gold.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Diamonds all Around Ring, 10K White Gold</h6>
+                <p class="card-text small">$1,980.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Aquamarine Ring with White Diamonds .23 CTW.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Aquamarine Ring with White Diamonds .23 CTW</h6>
+                <p class="card-text small">$1,970.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Aquamarine Ring with White Diamonds .20 CTW.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Aquamarine Ring with White Diamonds .20 CTW</h6>
+                <p class="card-text small">$1,670.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/7 Stackable Rings.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">7 Stackable Rings</h6>
+                <p class="card-text small">$1,360.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Lemon Citrine Quartz Ring.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Lemon Citrine Quartz Ring</h6>
+                <p class="card-text small">$1,335.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Aquamarine Gemstone, Brown Diamonds.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Aquamarine Gemstone, Brown Diamonds</h6>
+                <p class="card-text small">$1,285.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Single Eternity Ring.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Single Eternity Ring</h6>
+                <p class="card-text small">$1,173.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Stackable Flat Eternity Ring.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Stackable Flat Eternity Ring</h6>
+                <p class="card-text small">$1,140.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Sun Ring, Diamond.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Sun Ring, Diamond</h6>
+                <p class="card-text small">$490.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Celestial Diamond Ring.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Celestial Diamond Ring</h6>
+                <p class="card-text small">$490.00</p>
+              </div>
+            </div>
+          </div>
+              <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Moon Ring with Diamonds.jpg" class="card-img-top" alt="Ring 2">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Moon Ring with Diamonds</h6>
+                <p class="card-text small">$475.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Necklaces Modal -->
+<div class="modal fade" id="necklacesModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Necklaces Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/WhiteandBrownDiamondNecklace.jpg" class="card-img-top" alt="Necklace 1">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">White & Brown Diamond</h6>
+                <p class="card-text small">Diamond blend in elegant design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bracelets Modal -->
+<div class="modal fade" id="braceletsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Bracelets Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/BlueOvalSapphireBracelet.jpg" class="card-img-top" alt="Bracelet 1">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Sapphire Bracelet</h6>
+                <p class="card-text small">Blue oval sapphire in gold setting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Earrings Modal -->
+<div class="modal fade" id="earringsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Earrings Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/OvaDiamondEarrings.jpg" class="card-img-top" alt="Earring 1">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Oval Diamond Earrings</h6>
+                <p class="card-text small">Sophisticated design in classic cut.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SHOP BY METAL -->
+<section class="bg-light text-dark py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Shop by Metal</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-3 text-center">
+
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="py-3 px-2 bg-body-secondary text-dark fw-semibold rounded">
+            Gold
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="py-3 px-2 bg-body-secondary text-dark fw-semibold rounded">
+            Silver
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+      <!-- Right Column: Image and Text -->
+  <section class="bg-white text-dark py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Column: Image -->
+      <div class="col-md-6 mb-4 mb-md-0 text-center">
+        <img src="images/pexelsengagementjewelry.jpg" class="img-fluid rounded" alt="Brakar Collections">
+      </div>
+
+      <!-- Right Column: Text -->
+      <div class="col-md-6 text-md-start text-center px-3">
+        <div class="mx-auto" style="max-width: 500px;">
+          <h2 class="fw-bold mb-2">Custom Engagement Rings</h2>
+          <p class="mb-3 fs-6">Our signature settings are handmade and customizable for diamonds in any shape and size. Create your dream engagement ring today.</p>
+          <a href="BrakarbySilvaCustomPage.html" class="text-uppercase fw-semibold text-dark text-decoration-none" style="border-bottom: 1px solid #000; padding-bottom: 2px;">
+            Custom Service &rsaquo;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
 
 <!-- FOOTER -->
 <footer>
@@ -352,5 +708,45 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('productModal');
+  const title = modal.querySelector('h3');
+  const desc = modal.querySelector('.description');
+  const price = modal.querySelector('.price');
+  const mainImg = modal.querySelector('#media-img img');
+  const mainVidSource = modal.querySelector('#media-vid source');
+  const mainVid = modal.querySelector('#media-vid video');
+  const altVidSource = modal.querySelector('#media-alt source');
+  const altVid = modal.querySelector('#media-alt video');
+  const carouselBtns = modal.querySelectorAll('.product-carousel button');
+
+  document.querySelectorAll('.product-card').forEach((card) => {
+    card.addEventListener('click', () => {
+      const data = card.dataset;
+
+      title.textContent = data.title;
+      desc.textContent = data.desc;
+      price.textContent = data.price;
+
+      mainImg.src = data.img;
+      mainVidSource.src = data.vid;
+      mainVid.load();
+
+      if (data.alt) {
+        altVidSource.src = data.alt;
+        altVid.load();
+        carouselBtns[2].style.display = 'inline-block';
+      } else {
+        carouselBtns[2].style.display = 'none';
+      }
+
+      carouselBtns[0].querySelector("img").src = data.img;
+      carouselBtns[1].querySelector("source").src = data.vid;
+      carouselBtns[1].querySelector("video").load();
+    });
+  });
+});
+</script>
 </body>
 </html>
