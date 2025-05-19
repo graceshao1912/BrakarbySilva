@@ -167,6 +167,75 @@
   </div>
 </section>
 
+<!-- SHOP BY CATEGORY -->
+<section class="bg-light text-dark py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Shop by Category</h2>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 justify-content-center">
+
+      <!-- Category Card -->
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#ringsModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/PetalRingWithDiamonds.jpg" class="img-fluid rounded mb-1" alt="Rings">
+            <h6 class="small">Rings</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#necklacesModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/WhiteandBrownDiamondNecklace.jpg" class="img-fluid rounded mb-1" alt="Necklaces">
+            <h6 class="small">Necklaces</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#braceletsModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/BlueOvalSapphireBracelet.jpg" class="img-fluid rounded mb-1" alt="Bracelets">
+            <h6 class="small">Bracelets</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#earringsModal">
+          <div class="border rounded p-2 bg-dark text-white hover-card">
+            <img src="images/OvaDiamondEarrings.jpg" class="img-fluid rounded mb-1" alt="Earrings">
+            <h6 class="small">Earrings</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP BY METAL -->
+<section class="bg-light text-dark py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Shop by Metal</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-3 text-center">
+
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="py-3 px-2 bg-body-secondary text-dark fw-semibold rounded">
+            Gold
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="py-3 px-2 bg-body-secondary text-dark fw-semibold rounded">
+            Silver
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
@@ -247,6 +316,108 @@
       </div>
     </div>
   </div>
+<!-- CATEGORY MODALS -->
+
+<!-- Rings Modal -->
+<div class="modal fade" id="ringsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Rings Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/PetalRingWithDiamonds.jpg" class="card-img-top" alt="Ring">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Petal Ring With Diamonds</h6>
+                <p class="card-text small">$3,820.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Necklaces Modal -->
+<div class="modal fade" id="necklacesModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Necklaces Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/WhiteandBrownDiamondNecklace.jpg" class="card-img-top" alt="Necklace">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">White & Brown Diamond</h6>
+                <p class="card-text small">$N/A</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bracelets Modal -->
+<div class="modal fade" id="braceletsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Bracelets Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/BlueOvalSapphireBracelet.jpg" class="card-img-top" alt="Bracelet">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Sapphire Bracelet</h6>
+                <p class="card-text small">Blue oval sapphire in gold setting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Earrings Modal -->
+<div class="modal fade" id="earringsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Earrings Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/OvaDiamondEarrings.jpg" class="card-img-top" alt="Earring">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Oval Diamond Earrings</h6>
+                <p class="card-text small">Sophisticated design in classic cut.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
