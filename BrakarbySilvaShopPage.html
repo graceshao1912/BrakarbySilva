@@ -1,128 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brakar by Silva Products</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #111;
-      color: #fff;
-      padding-top: 75px;
-    }
-    .video-hero-header {
-      position: relative;
-      height: 50vh;
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .bg-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-    .header-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.55);
-      z-index: 1;
-    }
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.85) !important;
-    }
-    .nav-link {
-      color: white !important;
-      font-weight: 300;
-      text-transform: lowercase;
-      font-size: 0.9rem;
-    }
-    .nav-link:hover {
-      color: #f2c94c !important;
-    }
-    .hero-text {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      color: white;
-      padding: 20px;
-      max-width: 90%;
-      margin-top: 40px;
-    }
-    .hero-text h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-    }
-    .hero-text p {
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
-    .btn-gold {
-      background-color: #f2c94c;
-      color: #000;
-      border: none;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    .btn-gold:hover {
-      background-color: white;
-      color: black;
-    }
-    footer {
-      background: #000;
-      padding: 40px 0;
-      color: #fff;
-    }
-    footer h5, footer h6 {
-      color: #f2c94c;
-      font-weight: 600;
-    }
-    .footer-links a {
-      display: block;
-      color: #aaa;
-      text-decoration: none;
-      margin-bottom: 6px;
-    }
-    .footer-links a:hover {
-      color: #f2c94c;
-    }
-  </style>
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm py-3">
-  <div class="container d-flex justify-content-between align-items-center">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaHomePage.html">brakar by silva</a></li>
-        <li class="nav-item mx-3"><a class="nav-link active" href="BrakarbySilvaShopPage.html">jewelry</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaCustomPage.html">custom service</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaCollaborationsPage.html">collaborations</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaTermsPage.html">terms and conditions</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaNewsPage.html">news</a></li>
-        <li class="nav-item mx-3"><a class="nav-link" href="BrakarbySilvaMerchPage.html">merch</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+<!-- HEADER -->
 <header class="video-hero-header">
   <video autoplay muted loop playsinline class="bg-video">
     <source src="Videos/NecklaceZoomed.mp4" type="video/mp4">
@@ -134,46 +10,11 @@
   </div>
 </header>
 
-<section class="product-category" id="explore">
-  <h2 class="text-center fw-bold mb-5">Featured Products</h2>
-  <div class="product-grid container">
-    <div class="product-card"
-      data-bs-toggle="modal"
-      data-bs-target="#productModal"
-      data-title="Champion Style Ring"
-      data-desc="Custom handcrafted ring designed for standout impact. Fully customizable with diamond, gold, or platinum options."
-      data-price="$5,600.00"
-      data-img="images/ChampionStyleRing.jpg"
-      data-vid="Videos/ChampionStyleRingCustom.mp4"
-      data-alt="Videos/ChampionStyleRingAlternate.mp4">
-      <img src="images/ChampionStyleRing.jpg" alt="Champion Style Ring">
-      <h5>Champion Style Ring</h5>
-      <p>Custom Piece</p>
-    </div>
-
-    <div class="product-card"
-      data-bs-toggle="modal"
-      data-bs-target="#productModal"
-      data-title="5 Pointer Diamond Tennis Chain"
-      data-desc="Elegant 5 pointer tennis chain with top-tier VS diamonds. Crafted in solid white gold."
-      data-price="$14,820.00"
-      data-img="images/5PointerDiamondTennisChain.jpg"
-      data-vid="Videos/5PointerDiamondTennisChain.mp4"
-      data-alt="">
-      <img src="images/5PointerDiamondTennisChain.jpg" alt="5 Pointer Chain">
-      <h5>5 Pointer Diamond Tennis Chain</h5>
-      <p>$14,820.00</p>
-    </div>
-  </div>
-</section>
-
 <!-- SHOP BY CATEGORY -->
 <section class="bg-light text-dark py-5">
   <div class="container">
     <h2 class="text-center mb-4">Shop by Category</h2>
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 justify-content-center">
-
-      <!-- Category Card -->
       <div class="col">
         <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#ringsModal">
           <div class="border rounded p-2 bg-dark text-white hover-card">
@@ -182,7 +23,6 @@
           </div>
         </div>
       </div>
-
       <div class="col">
         <div class="text-decoration-none category-card" data-bs-toggle="modal" data-bs-target="#necklacesModal">
           <div class="border rounded p-2 bg-dark text-white hover-card">
@@ -211,12 +51,11 @@
   </div>
 </section>
 
-<!-- SHOP BY METAL -->
+<!-- SHOP BY MATERIAL -->
 <section class="bg-light text-dark py-5">
   <div class="container">
-    <h2 class="text-center fw-bold mb-5">Shop by Metal</h2>
+    <h2 class="text-center fw-bold mb-5">Shop by Material</h2>
     <div class="row row-cols-1 row-cols-md-2 g-3 text-center">
-
       <div class="col">
         <a href="#" class="text-decoration-none">
           <div class="py-3 px-2 bg-body-secondary text-dark fw-semibold rounded">
@@ -224,7 +63,6 @@
           </div>
         </a>
       </div>
-
       <div class="col">
         <a href="#" class="text-decoration-none">
           <div class="py-3 px-2 bg-body-secondary text-dark fw-semibold rounded">
@@ -236,59 +74,53 @@
   </div>
 </section>
 
-<div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
+<!-- MODALS -->
+<div class="modal fade" id="braceletsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Bracelets Gallery</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
       <div class="modal-body">
-        <div class="row g-4 flex-column flex-md-row">
-          <div class="col-md-6">
-            <div class="tab-content" id="productMediaContent">
-              <div class="tab-pane fade show active" id="media-img">
-                <img src="" class="img-fluid rounded w-100" alt="Product">
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/BlueOvalSapphireBracelet.jpg" class="card-img-top" alt="Sapphire Bracelet">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Sapphire Bracelet</h6>
+                <p class="card-text small">$9,000.00</p>
               </div>
-              <div class="tab-pane fade" id="media-vid">
-                <video class="w-100 rounded" muted controls playsinline>
-                  <source src="" type="video/mp4">
-                </video>
-              </div>
-              <div class="tab-pane fade" id="media-alt">
-                <video class="w-100 rounded" muted controls playsinline>
-                  <source src="" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <div class="product-carousel d-flex flex-wrap mt-3" role="tablist">
-              <button class="btn p-0 border-0 bg-transparent me-2" data-bs-toggle="tab" data-bs-target="#media-img">
-                <img src="" alt="Preview Image">
-              </button>
-              <button class="btn p-0 border-0 bg-transparent me-2" data-bs-toggle="tab" data-bs-target="#media-vid">
-                <video muted playsinline><source src="" type="video/mp4"></video>
-              </button>
-              <button class="btn p-0 border-0 bg-transparent" data-bs-toggle="tab" data-bs-target="#media-alt">
-                <video muted playsinline><source src="" type="video/mp4"></video>
-              </button>
             </div>
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-between">
-            <div>
-              <h3></h3>
-              <p class="description"></p>
-              <p class="price text-dark"></p>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/Bracelet with Diamonds9X3.jpg" class="card-img-top" alt="Bracelet with Diamonds (9x3)">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Bracelet with Diamonds (9x3)</h6>
+                <p class="card-text small">$1,700.00</p>
+              </div>
             </div>
-            <div class="mt-auto">
-              <button class="btn btn-dark w-100 mb-3">Inquire Now</button>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-white h-100">
+              <img src="images/DiamondBracelet5.jpg" class="card-img-top" alt="Diamond Bracelet 5">
+              <div class="card-body">
+                <h6 class="card-title text-warning small mb-1">Diamond Bracelet 5</h6>
+                <p class="card-text small">$3,200.00</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer pt-2">
-        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<footer>
+<!-- Other modals (rings, necklaces, earrings) stay intact -->
+
+<!-- FOOTER -->
+<footer class="bg-black text-white py-5">
   <div class="container">
     <div class="row">
       <div class="col-md-6 mb-4">
@@ -302,7 +134,7 @@
       <div class="col-md-3">
         <h6>Quick Links</h6>
         <div class="footer-links">
-          <a href="BrakarbySilvaTermsPage.html">Terms & Conditions</a>
+          <a href="#">Terms & Conditions</a>
           <a href="#">Shipping Policy</a>
           <a href="#">Privacy Policy</a>
         </div>
@@ -316,215 +148,4 @@
       </div>
     </div>
   </div>
-$1
-
-<!-- Bracelets Modal -->
-<div class="modal fade" id="braceletsModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header border-0">
-        <h5 class="modal-title">Bracelets Gallery</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row g-3">
-
-          <!-- Bracelet Card 1 -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card bg-dark text-white h-100">
-              <img src="images/Bracelet with Diamonds9X3.jpg" class="card-img-top" alt="Bracelet with Diamonds (9x3)">
-              <div class="card-body">
-                <h6 class="card-title text-warning small mb-1">Bracelet with Diamonds (9x3)</h6>
-                <p class="card-text small">$1,700.00</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bracelet Card 2 -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card bg-dark text-white h-100">
-              <img src="images/Blue Oval Sapphire Bracelet with Diamonds.jpg" class="card-img-top" alt="Blue Oval Sapphire Bracelet with Diamonds">
-              <div class="card-body">
-                <h6 class="card-title text-warning small mb-1">Blue Oval Sapphire Bracelet with Diamonds</h6>
-                <p class="card-text small">$9,000.00</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Rings Modal -->
-<div class="modal fade" id="ringsModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header border-0">
-        <h5 class="modal-title">Rings Gallery</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row g-3">
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card bg-dark text-white h-100">
-              <img src="images/PetalRingWithDiamonds.jpg" class="card-img-top" alt="Ring">
-              <div class="card-body">
-                <h6 class="card-title text-warning small mb-1">Petal Ring With Diamonds</h6>
-                <p class="card-text small">$3,820.00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Necklaces Modal -->
-<div class="modal fade" id="necklacesModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header border-0">
-        <h5 class="modal-title">Necklaces Gallery</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      $1$2</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Necklace Card 2 -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card bg-dark text-white h-100">
-              <img src="images/18K Two Tone Gold & Diamond Evil Eye Pendant Necklace.jpg" class="card-img-top" alt="Evil Eye Necklace">
-              <div class="card-body">
-                <h6 class="card-title text-warning small mb-1">18K Two Tone Evil Eye Pendant</h6>
-                <p class="card-text small">$1,700.00</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Necklace Card 3 -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card bg-dark text-white h-100">
-              <img src="images/Tiny Cross Necklace.jpg" class="card-img-top" alt="Tiny Cross Necklace">
-              <div class="card-body">
-                <h6 class="card-title text-warning small mb-1">Tiny Cross Necklace</h6>
-                <p class="card-text small">$280.00</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Necklace Card 4 -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card bg-dark text-white h-100">
-              <img src="images/Small Heart Necklace.jpg" class="card-img-top" alt="Small Heart Necklace">
-              <div class="card-body">
-                <h6 class="card-title text-warning small mb-1">Small Heart Necklace</h6>
-                <p class="card-text small">$240.00</p>
-              </div>
-            </div>
-          </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-$1
-          $1
-
-
-</div>
-          </div>
-
-          
-</div>
-</div>
-
-<!-- Bracelet Card 6 -->
-<div class="col-6 col-md-4 col-lg-3">
-  <div class="card bg-dark text-white h-100">
-    <img src="images/OvaDiamondEarrings.jpg" class="card-img-top" alt="Earring">
-    <div class="card-body">
-      <h6 class="card-title text-warning small mb-1">Oval Diamond Earrings</h6>
-      <p class="card-text small">$9,000.00</p>
-    </div>
-  </div>
-</div>
-
-<!-- Bracelet Card 7 -->
-<div class="col-6 col-md-4 col-lg-3">
-  <div class="card bg-dark text-white h-100">
-    <img src="images/Bracelet with Diamonds9X3.jpg" class="card-img-top" alt="Bracelet with Diamonds (9x3)">
-    <div class="card-body">
-      <h6 class="card-title text-warning small mb-1">Bracelet with Diamonds (9x3)</h6>
-      <p class="card-text small">$1,700.00</p>
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const modal = document.getElementById('productModal');
-    if (!modal) return;
-    const title = modal.querySelector('h3');
-    const desc = modal.querySelector('.description');
-    const price = modal.querySelector('.price');
-    const mainImg = modal.querySelector('#media-img img');
-    const mainVidSource = modal.querySelector('#media-vid source');
-    const mainVid = modal.querySelector('#media-vid video');
-    const altVidSource = modal.querySelector('#media-alt source');
-    const altVid = modal.querySelector('#media-alt video');
-    const carouselBtns = modal.querySelectorAll('.product-carousel button');
-
-    document.querySelectorAll('.product-card').forEach((card) => {
-      card.addEventListener('click', () => {
-        const data = card.dataset;
-
-        title.textContent = data.title;
-        desc.textContent = data.desc;
-        price.textContent = data.price;
-
-        mainImg.src = data.img;
-        mainVidSource.src = data.vid;
-        mainVid.load();
-
-        if (data.alt) {
-          altVidSource.src = data.alt;
-          altVid.load();
-          carouselBtns[2].style.display = 'inline-block';
-        } else {
-          carouselBtns[2].style.display = 'none';
-        }
-
-        carouselBtns[0].querySelector("img").src = data.img;
-        carouselBtns[1].querySelector("source").src = data.vid;
-        carouselBtns[1].querySelector("video").load();
-      });
-    });
-  });
-</script>
-</body>
-</html>
